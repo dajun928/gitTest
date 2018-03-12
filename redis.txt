@@ -1,0 +1,25 @@
+redis安装教程：
+Windows：https://github.com/MSOpenTech/redis/releases 下载.zip文件
+
+LINUX:
+1.下载并安装
+$ wget http://download.redis.io/releases/redis-2.8.17.tar.gz
+$ tar xzf redis-2.8.17.tar.gz
+$ cd redis-2.8.17
+$ make
+
+2.启动redis服务：
+$ cd src
+$ ./redis-server
+
+3.交互：
+$ cd src
+$ ./redis-cli
+redis> set foo bar
+OK
+redis> get foo
+"bar"
+
+4.检查是否安装成功：
+$ redis-cli
+redis 127.0.0.1:6379> ping
