@@ -1,5 +1,15 @@
 redis安装教程：
-Windows：https://github.com/MSOpenTech/redis/releases 下载.zip文件
+1.Windows：https://github.com/MSOpenTech/redis/releases 下载.zip文件
+2.修改配置文件redis.windows.conf内容：maxmemory 209715200 （可选）
+3.reids添加到windows服务中：redis-server --service-install redis.windows.conf
+添加成功后：
+	启动服务：
+	redis-server --service-start
+	关闭服务：
+	redis-server --service-stop
+
+
+
 
 LINUX:
 1.下载并安装
