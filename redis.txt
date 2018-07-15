@@ -22,6 +22,18 @@ $ make
 $ cd src
 $ ./redis-server
 
+service mysql start
+关闭服务：
+service mysql stop
+
+
+
+
+
+
+
+
+
 3.交互：
 $ cd src
 $ ./redis-cli
