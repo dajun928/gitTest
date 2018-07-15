@@ -18,4 +18,25 @@ mkdir -p /data/db
 
 进入usr/local/mongodb/bin
 mongod开启服务
-mongo进入即可
+mongo进入即可；
+
+
+设置远程登录：
+1.在etc下新建mongo.conf配置文件
+2.配置文件内容：
+dbpath=/var/lib/mongodb
+
+#where to log
+logpath=/var/log/mongodb/mongodb.log
+
+logappend=true
+
+#bind_ip = 127.0.0.1
+bind_ip = 0.0.0.0
+port = 27017
+
+# Enable journaling, http://www.mongodb.org/display/DOCS/Journaling
+journal=true
+
+3.已如下命令开启服务：
+mongod -f /etc/mongo.conf --fork
