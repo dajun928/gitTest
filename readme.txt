@@ -17,3 +17,10 @@ git pull ±¨´í£ºThere is no tracking information for the current branch.½â¾ö·½°¸£
 
 ½â¾öYour branch is ahead of 'origin/master' by X commits±¨´í£º
 git reset --hard origin/master
+
+
+
+
+
+
+celecy×ÊÁÏ£ºhttps://blog.csdn.net/freeking101/article/details/74707619
